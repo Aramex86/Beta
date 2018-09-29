@@ -1,0 +1,47 @@
+$(document).ready(function () {
+        $('.blogslider').bxSlider({
+            moveSlides:1,
+            maxSlides:3,
+            slideWidth: 470,
+            pager:false,
+            slideMargin:20,
+        });
+        $('.videoslider').bxSlider({
+            pager:false,
+            moveSlides:1,
+            maxSlides:3,
+            slideWidth:470,
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});

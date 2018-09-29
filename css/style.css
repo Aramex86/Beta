@@ -1,0 +1,240 @@
+.site-wrap{
+    background-color: #efefef;
+}
+.header-top {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sitecontainer{
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    border-left: 1px solid #8080802e;
+    border-right: 1px solid #8080802e;
+    box-shadow: 0px -2px 12px 1px #8080802e;
+}
+.header-topwrap{
+    width: 100%;
+    background-color: #fcfcfc;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0px 1px 1px 0px #929292;
+}
+.header-top{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    width: 12%;
+}
+.logo img{
+    width: 100%;
+}
+.nav-top{
+    display: flex;
+    align-items: center;
+}
+.nav-top li {
+    display: inline-block;
+    font-family: "open sans",sans-serif;
+    padding: 0 15px;
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+.nav-top a{
+    color: #556372;
+}
+.nav-top a:hover{
+    color: #b10d0d;
+}
+.personal-cab{
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+.personal-cab p{
+    left: 50%;
+    position: relative;
+    top: -28px;
+    font-variant: small-caps;
+    font-family: "open sans",sans-serif;
+    font-size: 1.6em;
+}
+.personal-cab a{
+    text-decoration: none;
+    color: #556372;
+    font-family: "open sans",sans-serif;
+}
+.lang{
+    position: relative;
+    top: -20%;
+}
+.lang img{
+    position: relative;
+    top: 25px;
+    left: -8px;
+}
+.header-bottom{
+    width: 100%;
+    background-color: #556372;
+    padding: 150px 0;
+    text-align: center;
+    color: white;
+    font-family:open sans,sans-serif ;
+    font-variant: small-caps;
+    font-size: 4em;
+}
+/*end header*/
+.homeblock h3{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    font-family: "open sans",sans-serif;
+    color: #b10d0d;
+    font-size: 1.7em;
+    font-weight: 100;
+}
+.blogsliderwrap, .videosliderwrap{
+    padding: 0 100px;
+    margin-bottom: 100px;
+
+}
+.bx-wrapper .bx-next {
+    right: -70px !important;
+    background: url(../images/nextarrow.png) no-repeat 0 3px !important;
+    transition: all 0.5s ease-in-out;
+}
+.bx-wrapper .bx-next:hover {
+    right: -70px !important;
+    background: url(../images/nextred.png) no-repeat 0 3px !important;
+}
+.bx-wrapper .bx-prev {
+    left: -70px !important;
+    background: url(../images/backarrow.png) no-repeat 0 3px !important;
+    transition: all 0.5s ease-in-out;
+}
+.bx-wrapper .bx-prev:hover {
+    left: -70px !important;
+    background: url(../images/prevred.png) no-repeat 0 3px !important;
+}
+.bx-wrapper{
+    -moz-box-shadow: 0 0 5px #ccc;
+     -webkit-box-shadow: 0 0 5px #ccc;
+     box-shadow: none !important;
+     border: none !important;
+    background: #f3f3f3 !important;
+}
+.blogwrap{
+    background-color: #f3f3f3;
+    height: 100%;
+}
+.blogtext{
+    font-family: "open sans", sans-serif;
+}
+.blogtext p:nth-child(2){
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.blogtext p:nth-child(3){
+    font-family: "open sans", sans-serif;
+    line-height: 21px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.blogtext h3{
+    padding:  10px 0;
+}
+.bx-wrapper img {
+    max-width: 89%!important;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px 1px rgba(143, 143, 143, 0.41);
+}
+.bx-viewport{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 550.313px!important;
+}
+.blogtext button{
+    background-color: initial;
+    border: 1px solid rgba(177, 13, 13, 0.41);
+    width: 115px;
+    height: 35px;
+    transition: all 1s ease-in-out;
+    border-radius: 20px;
+}
+.blogtext button:hover{
+    background-color: #b10d0d;
+}
+.blogtext a{
+    color: #556372;
+    text-decoration: none;
+    font-family: "open sans", sans-serif;
+    font-variant: small-caps;
+    font-size: 15px;
+    line-height: 50%;
+    background-image: none;
+    transition: all 1s ease-in-out;
+}
+.blogtext a:hover{
+    color: #ffff;
+}
+/*end blog*/
+.videowrap{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.main-video{
+    width: 80%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 730px;
+}
+
+.videosliderwrap div{
+    background-color: white;
+}
+.videoslider video{
+    padding-top: 55px;
+}
+#video1, #video2 {
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
