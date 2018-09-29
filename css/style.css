@@ -97,8 +97,6 @@
 }
 .blogsliderwrap, .videosliderwrap{
     padding: 0 100px;
-    margin-bottom: 100px;
-
 }
 .bx-wrapper .bx-next {
     right: -70px !important;
@@ -194,7 +192,6 @@
     margin-left: auto;
     margin-bottom: 730px;
 }
-
 .videosliderwrap div{
     background-color: white;
 }
@@ -204,7 +201,10 @@
 #video1, #video2 {
     position: absolute;
 }
-
+.videosliderwrap div:nth-child(1):first-child{
+    height: 325px!important;
+    background-color: white;
+}
 
 
 
