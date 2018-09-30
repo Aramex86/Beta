@@ -7,14 +7,13 @@ $(document).ready(function () {
             slideMargin:20,
         });
         $('.videoslider').bxSlider({
-            pager:false,
             moveSlides:1,
             maxSlides:3,
-            slideWidth:470,
+            slideWidth: 470,
+            pager:false,
+            slideMargin:28,
         });
-
-
-
+        $('.videosliderwrap div:eq(1)').addClass('secondslider');
 
 
 
