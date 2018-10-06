@@ -16,10 +16,9 @@ $(document).ready(function () {
         $('.videosliderwrap div:eq(1)').addClass('secondslider');
 
         $('.homeblock').hide();
-        $('.header-bottom').hide();
+       $('.header-bottom').hide();
         $('.authorization-block').hide();
         $('.aboutus').hide();
-
 
 
 

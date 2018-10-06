@@ -267,6 +267,16 @@
 .authorization-block{
     background-color: #ffffff;
 }
+.authorization-block nav{
+    padding: 20px 10px;
+    box-shadow: 1px 0px 5px 1px rgba(164, 164, 164, 0.2);
+    margin-top: 120px;
+}
+.authorization-block a{
+    color: #b10d0d;
+    text-decoration: none;
+    font-variant: small-caps;
+}
 .loginform span:after{
     content: "";
     display: block;
@@ -279,7 +289,6 @@
     padding:100px 0;
     font-family: "open sans", sans-serif;
     font-size: 2.5em;
-    margin-top: 100px;
 }
 .loginwrap{
     display: flex;
@@ -473,11 +482,42 @@
     width: 100%;
     height: 450px;
     background-color: #929292;
-    margin-bottom: 50px;
     margin-top: 125px;
 }
-
-
+.adress h3{
+    text-align: center;
+    font-family: "open sans", sans-serif;
+    font-size: 1.5em;
+    color: #b10d0d;
+    font-weight: 200;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+.adress ul{
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+}
+.adress li{
+    font-family: "open sans", sans-serif;
+    padding: 13px 0;
+    color: black;
+}
+.adress p{
+    margin-top: 7px;
+    font-size: 0.9em;
+    color: #929292;
+}
+.contact nav{
+    padding: 20px 10px;
+    box-shadow: 1px 0px 5px 1px rgba(164, 164, 164, 0.2);
+}
+.contact a{
+    color: #b10d0d;
+    text-decoration: none;
+    font-variant: small-caps;
+}
 
 
 

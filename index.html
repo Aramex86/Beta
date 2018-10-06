@@ -172,6 +172,11 @@
     <!-- end homeblock-->
     <div class="authorization-block">
         <div class="sitecontainer">
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                </ul>
+            </nav>
         <h2>LOGIN OR CREATE AN ACCOUNT</h2>
         <div class="loginwrap">
             <div class="loginform">
@@ -269,7 +274,26 @@
     <!-- end about us-->
     <div class="contact">
         <div class="sitecontainer">
-            <div id="map">
+            <div id="map"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                </ul>
+            </nav>
+            <div class="adress">
+                <h3>Our Laboratory</h3>
+                <ul>
+                    <li>CHISINAU, Alecu Russo 16/4</li>
+                    <li>
+                        MONDAY – FRIDAY 07:30 AM – 06:00 PM
+                        <p>collection of samples 07:30 AM – 03:00 PM</p>
+                    </li>
+                    <li>
+                        SATURDAY 08:00 AM – 02:00 PM
+                        <p>collection of samples 08:00 AM – 01:00 PM</p>
+                    </li>
+                    <li>(022) 82 52 84, 078 55 86 24 &nbsp;&nbsp;&nbsp;&nbsp;info@betalab.md</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -302,25 +326,8 @@
     </div>
 </div>
 
-<script>
-    // Initialize and add the map
-    function initMap() {
-        // The location of Uluru
-        var uluru = {lat: -24.344, lng: 131.036};
-        // The map, centered at Uluru
-        var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 6, center: uluru});
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-            title:"BetaLab",
-        });
-    }
-</script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHCjDQJG0ISIyqY5MlcPVHagzkqSjLGE4&callback=initMap">
-</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu2z1fzpK9f28o-QU5kSMQeWAKYrhqdd0&callback=initMap"></script>
+<script src="js/jsmap.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="js/file1.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
