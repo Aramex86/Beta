@@ -20,6 +20,9 @@
     border-top: 1px solid #d4d4d4;
     border-bottom: 1px solid #efefef;
     box-shadow: 0px 1px 1px 0px #929292;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
 }
 .header-top{
     display: flex;
@@ -189,7 +192,7 @@
     width: 100%;
 }
 .main-videowrap{
-    width:80%;
+    width:70%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
@@ -197,9 +200,14 @@
 #video1 video{
     width: 100%;
     position: absolute;
+    border-radius: 50px;
+    border: 1px solid gray;
+    box-shadow:1px 1px 8px 1px grey;
 }
 #video2 video{
     width: 100%;
+    border-radius: 50px;
+    box-shadow:1px 1px 8px 1px grey;
 }
 #video1,#video2{
     position: relative;
@@ -255,20 +263,219 @@
     font-size: 1em;
     color: #556372;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*end video*/
+.authorization-block{
+    background-color: #ffffff;
+}
+.loginform span:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #b10d0d ;
+    width: 150px;
+    margin-bottom: 50px;
+}
+.authorization-block h2{
+    text-align: center;
+    padding:100px 0;
+    font-family: "open sans", sans-serif;
+    font-size: 2.5em;
+    margin-top: 100px;
+}
+.loginwrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+.loginform,.registrationform{
+    background-color: #eeeeee;
+    margin-bottom: 150px;
+}
+.loginform{
+    padding: 150px 150px;
+    border-radius: 20px;
+    width: 45%;
+}
+.loginform h3{
+    font-family: "open sans", sans-serif;
+    font-size: 2em;
+}
+.picwrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.userpic{
+    width: 100%;
+}
+.cardpic{
+    width: 100%;
+}
+.userpic img{
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 2px grey;
+}
+.cardpic img{
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 2px grey;
+}
+.exemple1  input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 95%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.71);
+}
+.exemple1 input::placeholder{
+    padding-left: 20px;
+    font-family: "open sans", sans-serif;
+}
+.exemple2 input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 95%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.71);
+}
+.exemple2 input::placeholder {
+    padding-left: 20px;
+    font-family: "open sans", sans-serif;
+}
+.btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.loginform button{
+    width: 83%;
+    height: 50px;
+    background-color: #b10d0d;
+    border: none;
+    color: white;
+    font-family: "open sans", sans-serif;
+    border-radius:5px;
+}
+/*end loginform*/
+.registrationform{
+    padding: 150px 150px;
+    border-radius: 20px;
+    width: 45%;
+}
+.registrationform h3{
+    font-family: "open sans", sans-serif;
+    font-size: 2em;
+}
+.registrationform span:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #b10d0d ;
+    width: 150px;
+    margin-bottom: 50px;
+}
+.regtext{
+    font-family: "open sans", sans-serif;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+.regtext p:nth-child(2){
+    font-weight: bold;
+}
+.registrationform li{
+    padding: 10px 0;
+    list-style: disc;
+    font-family: "open sans", sans-serif;
+}
+.registrationform button{
+    width: 83%;
+    height: 50px;
+    background-color: #b10d0d;
+    border: none;
+    color: white;
+    font-family: "open sans", sans-serif;
+    border-radius:5px;
+}
+.btnreg{
+    width: 100%;
+    text-align: center;
+    margin-top: 213px;
+}
+/*  end sign up form */
+.aboutus{
+    margin-top: 120px;
+    background-color: #ffff;
+}
+.intropic{
+    background-image: url("../images/aboutus.jpg");
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+}
+.aboutus nav{
+    padding: 20px 10px;
+    box-shadow: 1px 0px 5px 1px rgba(164, 164, 164, 0.2);
+}
+.aboutus li{
+    display: inline-block;
+    padding:0 10px;
+}
+.aboutus a{
+    color: #b10d0d;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+.aboutus h2{
+    text-align: center;
+    font-family: "open sans", sans-serif;
+    padding: 100px 0;
+    font-weight: bold;
+    font-size: 2em;
+}
+.aboutus p:nth-child(4){
+    font-family: "open sans", sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 25px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+.aboutus p:nth-child(5){
+    width: 80%;
+    margin: 0 auto;
+    font-family: "open sans", sans-serif;
+    padding-bottom: 25px;
+    font-size: 1.3em;
+}
+.aboutuslist li{
+    padding: 25px 0;
+}
+.aboutuslist{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:100px;
+    font-family: "open sans", sans-serif;
+    margin-top: 70px;
+}
+.aboutuslist h4{
+    margin-bottom: 15px;
+    color: #b10d0d;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.aboutuslist p{
+    font-size: 1.1em;
+    padding-bottom: 15px;
+}
+/*end about us*/
+#map{
+    width: 100%;
+    height: 450px;
+    background-color: #929292;
+    margin-bottom: 50px;
+    margin-top: 125px;
+}
 
 
 

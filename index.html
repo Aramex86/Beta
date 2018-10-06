@@ -21,7 +21,7 @@
                             <nav>
                                 <ul>
                                     <a href="#"><li>home</li><span></span></a>
-                                    <a href="#"><li>facilities</li></a>
+                                    <a href="#"><li>services</li></a>
                                     <a href="#"><li>blog</li></a>
                                     <a href="#"><li>about us</li></a>
                                     <a href="#"><li>contacts</li></a>
@@ -169,6 +169,111 @@
       </div>
       <!--end video-->
     </div>
+    <!-- end homeblock-->
+    <div class="authorization-block">
+        <div class="sitecontainer">
+        <h2>LOGIN OR CREATE AN ACCOUNT</h2>
+        <div class="loginwrap">
+            <div class="loginform">
+                <h3>Authorization</h3>
+                <span></span>
+                <div class="picwrap">
+                <div class="userpic">
+                    <img src="images/userpic.jpg" alt="">
+                </div>
+                <div class="cardpic">
+                    <img src="images/cardpic.jpg" alt="">
+                </div>
+                </div>
+                <div class="exemple1">
+                    <div class="userlog">
+                    <form>
+                        <input type="text" placeholder="Nickname" autocomplete="on">
+                        <input type="password" placeholder="Password" autocomplete="on">
+                    </form>
+                    </div>
+                </div>
+                <div class="exemple2">
+                    <div class="cardlog">
+                    <form>
+                        <input type="text" placeholder="Card number" autocomplete="on">
+                        <input type="password" placeholder="Card CVV" autocomplete="on">
+                    </form>
+                    </div>
+                </div>
+                <div class="btn">
+                <button type="submit"> Sign in</button>
+                </div>
+            </div>
+            <div class="registrationform">
+                <h3>Registration</h3>
+                <span></span>
+                <div class="regtext">
+                    <p>
+                        <p>Visiting our site for the first time?</p>
+                        Register and appreciate the advantages of the personal cabinet:
+                    </p>
+                </div>
+                <ul>
+                    <li>Results review</li>
+                    <li>Current status of probe</li>
+                    <li>Ordering at home analysis </li>
+                </ul>
+                <div class="btnreg">
+                <button type="submit">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--end authorization-block-->
+    <div class="aboutus">
+        <div class="sitecontainer">
+            <div class="intropic"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                </ul>
+            </nav>
+            <h2>About Us</h2>
+            <p>
+                Beta Laboratory - private medical company, with own clinical-diagnostic and microbiological
+                laboratories, and a network of centers for testing.
+                Official partner of MDI Laboratorien - member of Limbach Gruppe,
+                largest network of medical laboratories in Germany and Europe.
+            </p>
+            <p>We guarantee to each patient:</p>
+            <ul class="aboutuslist">
+                <li>
+                    <h4>Timing</h4>
+                    <p>
+                        Completion of routine tests within a single workday.
+                    </p>
+                </li>
+                <li>
+                    <h4>Accuracy</h4>
+                    <p>
+                        Strict quality assurance policy and independent international assessment.
+                    </p>
+                </li>
+                <li>
+                    <h4>Convenience</h4>
+                    <p>
+                        Real-time tracking of tests' completion status and results on the website.
+                    </p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- end about us-->
+    <div class="contact">
+        <div class="sitecontainer">
+            <div id="map">
+            </div>
+        </div>
+    </div>
+    <!--end contact-->
         <div class="sitecontainer">
         <footer>
             <div class="footer-top">
@@ -197,9 +302,25 @@
     </div>
 </div>
 
-
-
-
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var uluru = {lat: -24.344, lng: 131.036};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 6, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            title:"BetaLab",
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHCjDQJG0ISIyqY5MlcPVHagzkqSjLGE4&callback=initMap">
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="js/file1.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
