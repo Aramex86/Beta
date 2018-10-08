@@ -21,7 +21,7 @@ $(document).ready(function () {
         $('.aboutus').hide();
         $('.contact').hide();
         $('.blogpagewrap').hide();
-        //$('.blogfull').filter(':eq(0),:eq(1),:eq(2),:eq(3),:eq(4)').hide();
+        $('.blogfull').filter(':eq(0),:eq(1),:eq(2),:eq(3),:eq(4)').hide();
         $('.blog').hide();
 
 

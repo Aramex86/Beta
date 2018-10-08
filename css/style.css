@@ -792,8 +792,27 @@
 .letters-list a:hover{
     color: #b10d0d;
 }
-
-
+.testswrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 150px;
+}
+.testswrap span{
+    border: 1px solid rgba(128, 128, 128, 0.51);
+    padding: 10px 25px;
+    margin: 2px 2px;
+    font-family: "open sans", sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.testswrap span:hover{
+    background-color: #b10d0d;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+/*end service*/
 
 
 
