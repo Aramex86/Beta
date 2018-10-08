@@ -16,12 +16,12 @@ $(document).ready(function () {
         $('.videosliderwrap div:eq(1)').addClass('secondslider');
 
         $('.homeblock').hide();
-       $('.header-bottom').hide();
+        $('.header-bottom').hide();
         $('.authorization-block').hide();
         $('.aboutus').hide();
-
-
-
+        $('.contact').hide();
+        $('.blogpagewrap').hide();
+        $('.blogfull').filter(':eq(1),:eq(2),:eq(3),:eq(4)').hide();
 
 
 
