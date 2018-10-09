@@ -1,5 +1,5 @@
 .site-wrap{
-    background-color: #efefef;
+   /* background-color: #efefef;*/
 }
 .header-top {
     max-width: 1600px;
@@ -224,10 +224,16 @@
 .footer-top{
     display: flex;
     align-items: center;
+    background-color: #e5e5e5;
+}
+.footer-logo{
+    display: flex;
+    width: 50%;
 }
 .footer-logo img{
-    width: 40%;
+    width: 296px;
     padding-left: 114px;
+    height: 119px;
 }
 .footernav li{
     display: inline-block;
@@ -412,7 +418,7 @@
 }
 /*  end sign up form */
 .aboutus{
-    margin-top: 120px;
+    margin-top: 117px;
     background-color: #ffff;
 }
 .intropic{
@@ -482,7 +488,7 @@
     width: 100%;
     height: 450px;
     background-color: #929292;
-    margin-top: 125px;
+    margin-top: 117px;
 }
 .adress h3{
     text-align: center;
@@ -520,7 +526,7 @@
 }
 /*end  contact*/
 .blog{
-    margin-top: 124px;
+    margin-top: 117px;
     background-color: white;
 }
 .blogpagewrap{
@@ -670,6 +676,15 @@
     margin-top:117px;
     background-color: white;
 }
+.services nav{
+    padding: 20px 10px;
+    box-shadow: 1px 0px 5px 1px rgba(164, 164, 164, 0.2);
+}
+.services a{
+    color: #b10d0d;
+    text-decoration: none;
+    font-variant: small-caps;
+}
 .serviceheader{
     background-color: rgba(233, 233, 233, 0.52);
     display: flex;
@@ -712,12 +727,17 @@
     background-size: 29px 29px;
     background-repeat: no-repeat;
     background-position: right center;
+    width: 50%;
 }
 .search input::placeholder{
     font-variant: small-caps;
     font-family: "open sans", sans-serif;
-    font-size: 1.2em;
-
+    font-size: 1em;
+}
+.search input::-moz-placeholder{
+    font-variant: small-caps;
+    font-family: "open sans", sans-serif;
+    font-size: 1em;
 }
 /*end search*/
 .select{
@@ -774,7 +794,6 @@
 }
 /*end amount*/
 /* end service header */
-
 .letters-list li{
     display: inline-block;
     padding-right: 5px;
@@ -782,6 +801,7 @@
 .letters-list ul {
     text-align: center;
     padding:20px 0;
+    margin-top: 50px;
 }
 .letters-list a{
     text-decoration: none;
@@ -796,7 +816,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 80px 150px;
+    padding: 150px 150px;
 }
 .testswrap span{
     border: 1px solid rgba(128, 128, 128, 0.51);
