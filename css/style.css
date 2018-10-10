@@ -62,7 +62,11 @@
     top: -28px;
     font-variant: small-caps;
     font-family: "open sans",sans-serif;
-    font-size: 1.6em;
+    font-size: 1.4em;
+}
+.personal-cab p:hover{
+    text-decoration: underline;
+    color: #b10d0d;
 }
 .personal-cab a{
     text-decoration: none;
@@ -325,12 +329,13 @@
     width: 100%;
 }
 .userpic img{
-    border-radius: 15px;
-    box-shadow: 1px 1px 5px 2px grey;
+    border-radius: 7px;
 }
 .cardpic img{
-    border-radius: 15px;
-    box-shadow: 1px 1px 5px 2px grey;
+    border-radius: 7px;
+}
+.cardlog{
+    margin-top: 50px;
 }
 .exemple1  input{
     display: flex;
@@ -344,6 +349,10 @@
 .exemple1 input::placeholder{
     padding-left: 20px;
     font-family: "open sans", sans-serif;
+}
+.exemple1 input:nth-child(3){
+    width: 25px;
+    height: 25px;
 }
 .exemple2 input{
     display: flex;
@@ -361,6 +370,9 @@
 .btn{
     width: 100%;
     text-align: center;
+    margin-top: 130px;
+}
+.userlog{
     margin-top: 50px;
 }
 .loginform button{
@@ -371,6 +383,7 @@
     color: white;
     font-family: "open sans", sans-serif;
     border-radius:5px;
+    cursor: pointer;
 }
 /*end loginform*/
 .registrationform{
@@ -410,6 +423,7 @@
     color: white;
     font-family: "open sans", sans-serif;
     border-radius:5px;
+    cursor: pointer;
 }
 .btnreg{
     width: 100%;

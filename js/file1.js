@@ -18,7 +18,7 @@ $(document).ready(function () {
         //$('.homeblock').hide();
         //$('.header-bottom').hide();
         $('.services, .blog, .blogfull, .contact, .aboutus, .authorization-block').hide();
-        //top nav menu
+        //top nav ,header,authorization
        var services = $('.nav-top li:eq(0)');
        var blog = $('.nav-top li:eq(1)');
        var aboutUs = $('.nav-top li:eq(2)');
@@ -47,10 +47,28 @@ $(document).ready(function () {
             $('.services, .blog, .blogfull, .contact, .aboutus, .authorization-block').hide();
             $('.homeblock, .header-bottom').fadeIn(1000);
         });
+        $('.personal-cab p').click(function () {
+           $('.services, .blog, .blogfull, .contact, .aboutus, .homeblock, .header-bottom ').hide();
+           $('.authorization-block').fadeIn(500);
+        });
+        $('.cardlog').hide();
 
-
-
-
+        $('.userpic').click(function () {
+           $('.userpic img').css({"border":"1px solid red","box-shadow":"1px 1px 7px 0px #808080d1"});
+           $('.cardpic img').css("border","1px solid gray");
+            $('.cardlog').hide();
+            $('.userlog').show();
+        });
+        $('.cardpic').click(function () {
+           $('.cardpic img').css({"border":"1px solid red","box-shadow":"1px 1px 7px 0px #808080d1"});
+            $('.userpic img').css("border","1px solid gray");
+            $('.cardlog').show();
+            $('.userlog').hide();
+        });
+        if (window.location.reload(true)=== $('.authorization-block')){
+            $('.services, .blog, .blogfull, .contact, .aboutus, .homeblock, .header-bottom ').hide();
+            $('.authorization-block').show();
+        }
 
 
 
