@@ -16,13 +16,14 @@ $(document).ready(function () {
         $('.videosliderwrap div:eq(1)').addClass('secondslider');
 
         //top nav ,header,authorization
-        var services = $('.nav-top li:eq(0)');
+      /*  var services = $('.nav-top li:eq(0)');
         var blog = $('.nav-top li:eq(1)');
         var aboutUs = $('.nav-top li:eq(2)');
         var contacts = $('.nav-top li:eq(3)');
         var home = $('.homeblock, .header-bottom');
+        */
        //$('.services, .blog, .homeblock, .header-bottom, .contact, .aboutus, .authorization-block').hide();
-        $('.part.homeblock-page').show();
+        /*$('.part.homeblock-page').show();
         $('.page-link').click(function (event) {
            event.preventDefault();
            var name = this.dataset.page;
@@ -38,7 +39,7 @@ $(document).ready(function () {
                $('.part').hide();
            });
        });
-
+*/
 
 
 
