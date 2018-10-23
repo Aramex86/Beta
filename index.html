@@ -20,10 +20,10 @@
                         <div class="nav-top">
                             <nav>
                                 <ul>
-                                    <a href="#"><li>services</li></a>
-                                    <a href="#"><li>blog</li></a>
-                                    <a href="#"><li>about us</li></a>
-                                    <a href="#"><li>contacts</li></a>
+                                    <li class="page-link" data-page="services"><a href="">services</a></li>
+                                    <li class="page-link" data-page="blog"><a href="">blog</a></li>
+                                    <li class="page-link" data-page="aboutus"><a href="">about us</a></li>
+                                    <li class="page-link" data-page="contact"><a href="">contacts</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -46,7 +46,7 @@
             </div>
     </header>
     <!--end header-->
-    <div class="homeblock">
+    <div class="homeblock  home-page">
     <div class="sitecontainer">
         <div class="blogwrap">
         <h3>BLOG</h3>
@@ -188,7 +188,7 @@
       <!--end video-->
     </div>
     <!-- end homeblock-->
-    <div class="authorization-block">
+    <div class="authorization-block part reg-page">
         <div class="sitecontainer">
             <nav>
                 <ul>
@@ -213,8 +213,16 @@
                     <form>
                         <input type="text" placeholder="Nickname" autocomplete="on">
                         <input type="password" placeholder="Password" autocomplete="on">
-                        <input type="checkbox"><span>Remember</span>
                     </form>
+                        <div class="recover">
+                            <div class="remeber">
+                            <input type="checkbox" id="singinremrmber">
+                            <p>Remember</p>
+                            </div>
+                            <div class="recoverpass">
+                                <p><a href="#">Forgot Password ?</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="exemple2">
@@ -251,7 +259,7 @@
     </div>
     </div>
     <!--end authorization-block-->
-    <div class="aboutus">
+    <div class="aboutus part aboutus-page">
         <div class="sitecontainer">
             <div class="intropic"></div>
             <nav>
@@ -291,7 +299,7 @@
         </div>
     </div>
     <!-- end about us-->
-    <div class="contact">
+    <div class="contact part contact-page">
         <div class="sitecontainer">
             <div id="map"></div>
             <nav>
@@ -317,7 +325,7 @@
         </div>
     </div>
     <!--end contact-->
-    <div class="blog">
+    <div class="blog part blog-page">
         <div class="sitecontainer">
             <nav class="bloghome">
                 <ul>
@@ -564,7 +572,7 @@
         </div>
         </div>
     </div>
-    <div class="services">
+    <div class="services part services-page">
         <div class="sitecontainer">
             <div class="serviceheader">
                 <div class="search">

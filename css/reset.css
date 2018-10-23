@@ -52,3 +52,6 @@ table {
 *:focus {
     outline: none;
 }
+* {
+	outline: none;
+}

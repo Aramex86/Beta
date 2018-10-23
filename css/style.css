@@ -33,17 +33,31 @@
 }
 .logo img{
     width: 100%;
+    outline: none;
 }
+.logo a:active, a:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+}
+
 .nav-top{
     display: flex;
     align-items: center;
 }
-.nav-top li {
+
+.page-link{
     display: inline-block;
     font-family: "open sans",sans-serif;
     padding: 0 15px;
     font-variant: small-caps;
     font-size: 1.5em;
+    border: none;
+    background-color: initial;
+    outline: none;
+}
+.page-link:hover{
+    background-color: initial;
 }
 .nav-top a{
     color: #556372;
@@ -350,10 +364,36 @@
     padding-left: 20px;
     font-family: "open sans", sans-serif;
 }
-.exemple1 input:nth-child(3){
-    width: 25px;
-    height: 25px;
+.recover{
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    font-family: "open sans", sans-serif;
 }
+.recover input{
+    width: 16px;
+    position: relative;
+    top:-15px;
+}
+.remeber{
+    width: 50%;
+    display: flex;
+}
+.remeber p{
+    padding-left: 10px;
+}
+.recoverpass{
+    width: 50%;
+}
+.recoverpass p{
+    float: right;
+    color: #b10d0d;
+    text-decoration: underline;
+}
+.recoverpass a{
+   font-variant: none;
+}
+
 .exemple2 input{
     display: flex;
     flex-direction: column;
@@ -370,7 +410,7 @@
 .btn{
     width: 100%;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 74px;
 }
 .userlog{
     margin-top: 50px;
@@ -398,7 +438,7 @@
 .registrationform span:after{
     content: "";
     display: block;
-    border-bottom: 1px solid #b10d0d ;
+    border-bottom: 1px solid #b10d0d;
     width: 150px;
     margin-bottom: 50px;
 }
@@ -848,8 +888,15 @@
 }
 /*end service*/
 
-
-
+.active-part nav{
+    padding: 20px 10px;
+    box-shadow: 1px 0px 5px 1px rgba(164, 164, 164, 0.2);
+    margin-top: 120px;
+}
+/* nav swicth*/
+.part{
+    display:none;
+}
 
 
 
