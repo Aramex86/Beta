@@ -1,10 +1,14 @@
 .site-wrap{
    /* background-color: #efefef;*/
+    opacity: 0.5;
 }
 .header-top {
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+
 }
 .sitecontainer{
     max-width: 1600px;
@@ -23,10 +27,6 @@
     position: fixed;
     z-index: 9999;
     top: 0;
-}
-.header-top{
-    display: flex;
-    justify-content: space-around;
 }
 .logo{
     width: 12%;
@@ -68,7 +68,7 @@
 .personal-cab{
     display: flex;
     align-items: center;
-    width: 15%;
+    width: 16%;
 }
 .personal-cab p{
     left: 50%;
@@ -210,10 +210,11 @@
     width: 100%;
 }
 .main-videowrap{
-    width:70%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
+    margin-bottom: 686px;
+    position: relative;
 }
 #video1 video{
     width: 100%;
@@ -228,7 +229,8 @@
     box-shadow:1px 1px 8px 1px grey;
 }
 #video1,#video2{
-    position: relative;
+    position: absolute;
+    width: 100%;
 }
 .videoslider video{
     width: 402px;
@@ -310,7 +312,7 @@
 }
 .authorization-block h2{
     text-align: center;
-    padding:100px 0;
+    padding: 10px 0 35px 0;
     font-family: "open sans", sans-serif;
     font-size: 2.5em;
 }
@@ -320,12 +322,12 @@
 }
 .loginform,.registrationform{
     background-color: #eeeeee;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 .loginform{
-    padding: 150px 150px;
+    padding: 40px 100px;
     border-radius: 20px;
-    width: 45%;
+    width: 40%;
 }
 .loginform h3{
     font-family: "open sans", sans-serif;
@@ -427,9 +429,9 @@
 }
 /*end loginform*/
 .registrationform{
-    padding: 150px 150px;
+    padding: 40px 150px;
     border-radius: 20px;
-    width: 45%;
+    width: 40%;
 }
 .registrationform h3{
     font-family: "open sans", sans-serif;
