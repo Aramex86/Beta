@@ -14,7 +14,7 @@ $(document).ready(function () {
             slideMargin:28,
         });
         $('.videosliderwrap div:eq(1)').addClass('secondslider');
-        $(".site-wrap").delay(300).animate({"opacity": "1.5"}, 600);
+        $(".fadepage").delay(300).animate({"opacity": "1.5"}, 600);
         function videoChange(){
             $('.cover1').click(function () {
                 $('#video2').hide();
@@ -26,13 +26,7 @@ $(document).ready(function () {
             });
         }
         videoChange();
-
-
-
-
-
-
-
+        function registration(){
         $('.personal-cab p').click(function () {
              $('.services, .blog, .blogfull, .contact, .aboutus, .homeblock, .header-bottom ').hide();
              $('.authorization-block').fadeIn(500);
@@ -53,13 +47,21 @@ $(document).ready(function () {
             $('.userlog').hide();
             $('.btn').css("margin-top","127px");
         });
+        }
+        registration();
+        $('.blogfull').addClass('hide');
 
+       var articleTop =[];
+       $('.articleblog').each(function (index) {
+           articleTop.push($(this).length);
+       });
+       console.log(articleTop);
 
-
-
-
-
-
+        var articleBottom = [];
+        $('.blogfull').each(function (index) {
+           articleBottom.push($(this).length);
+        });
+        console.log(articleBottom);
 
 
 
