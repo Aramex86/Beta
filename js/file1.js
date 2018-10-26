@@ -49,7 +49,7 @@ $(document).ready(function () {
         });
         }
         registration();
-       // $('.blogfull').addClass('hide');
+       $('.blogfull').addClass('hide');
 
         var blogTop = {
             name1:$('.articleblog').eq(0),
@@ -66,6 +66,46 @@ $(document).ready(function () {
             name5:$('.blogfull').eq(5),
         }
 
+        function blogSwitch() {
+            $(blogTop.name4).hide();
+            $(blogTop.name1).click(function () {
+               $('.articleblog').hide();
+               $('.blogfull').hide();
+               $(blogBottom.name1).fadeIn(500);
+                $('.load-button').hide();
+            });
+            $(blogTop.name2).click(function () {
+                $('.articleblog').hide();
+                $('.blogfull').hide();
+                $(blogBottom.name2).fadeIn(500);
+                $('.load-button').hide();
+            });$(blogTop.name3).click(function () {
+                $('.articleblog').hide();
+                $('.blogfull').hide();
+                $(blogBottom.name3).fadeIn(500);
+                $('.load-button').hide();
+            });$(blogTop.name4).click(function () {
+                $('.articleblog').hide();
+                $('.blogfull').hide();
+                $(blogBottom.name4).fadeIn(500);
+                $('.load-button').hide();
+            });
+            $('.load-more').click(function () {
+               $(blogTop.name4).fadeIn(500);
+               $('.load-button').hide();
+            });
+            $(blogTop.name5).click(function () {
+                $('.articleblog').hide();
+                $('.blogfull').hide();
+                $(blogBottom.name5).fadeIn(500);
+                $('.load-button').hide();
+            });
+            $('.article').click(function () {
+                window.location.replace("file:///E:/PROJECTS/betalab/blog.html");
+            });
+
+        }
+        blogSwitch();
 
 
 

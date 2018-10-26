@@ -612,6 +612,7 @@
     transform: scale(1.1);
     transition: all 1s ease-in-out;
 }
+
 .articletext{
     font-family: "open sans", sans-serif;
     line-height: 25px;
@@ -636,6 +637,20 @@
     border:none;
     color: white;
     border-radius: 5px;
+}
+.load-button{
+    text-align: center;
+    padding: 80px 0 80px 0;
+}
+.load-more{
+    background-color: #b10d0d;
+    color: white;
+    border: none;
+    width: 120px;
+    height: 38px;
+    line-height: 50%;
+    border-radius: 20px;
+
 }
 .bloghome{
     padding: 20px 10px;
