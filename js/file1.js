@@ -49,23 +49,22 @@ $(document).ready(function () {
         });
         }
         registration();
-        $('.blogfull').addClass('hide');
+       // $('.blogfull').addClass('hide');
 
-       var articleTop =[];
-       $('.articleblog').each(function (index) {
-           articleTop.push($(this).length);
-       });
-       console.log(articleTop);
-
-        var articleBottom = [];
-        $('.blogfull').each(function (index) {
-           articleBottom.push($(this).length);
-        });
-        console.log(articleBottom);
-
-
-
-
+        var blogTop = {
+            name1:$('.articleblog').eq(0),
+            name2:$('.articleblog').eq(1),
+            name3:$('.articleblog').eq(3),
+            name4:$('.articleblog').eq(4),
+            name5:$('.articleblog').eq(5),
+        }
+        var blogBottom = {
+            name1:$('.blogfull').eq(0),
+            name2:$('.blogfull').eq(1),
+            name3:$('.blogfull').eq(3),
+            name4:$('.blogfull').eq(4),
+            name5:$('.blogfull').eq(5),
+        }
 
 
 
