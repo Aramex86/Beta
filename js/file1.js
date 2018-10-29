@@ -101,11 +101,18 @@ $(document).ready(function () {
                 $('.load-button').hide();
             });
             $('.article').click(function () {
-                window.location.replace("file:///E:/PROJECTS/betalab/blog.html");
+                window.location.replace("./blog.html");
             });
-
+            $('.back').hide();
+            $('.articleblog').click(function () {
+            $('.back').show();
+            });
         }
         blogSwitch();
+        $('.tests a').click(function () {
+            window.location.replace("./services.html");
+        });
+
 
 
 
