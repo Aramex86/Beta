@@ -1,12 +1,9 @@
     var test = $('.testslist span');
     var letters = $('.alphabet a');
-
-
     function testLetters() {
         for (var i = 0; i <= test.length;i++ ){
         }
         for (var i=0;i<=letters.length;i++) {
-
         }
     }
     function alphabet() {
@@ -85,8 +82,7 @@
         choiseAlphabet();
     }
 
-    testLetters();
-    alphabet();
+
     function bottomList() {
     var bottomtest = $('.testswrap span');
     for (var i = 0;i<=bottomtest.length;i++){
@@ -218,13 +214,16 @@
         });
     }
     }
-    bottomList();
     function changeValue() {
         var value = 0;
        function tableClick() {
            $('.table td').click(function () {
                value ++;
                $('.blood').attr("src","images/bloodtest-2.png");
+               $('.row1 img').attr("src","images/bloodtest-2.png");
+               $('.row2 img').attr("src","images/bloodtest-2.png");
+               $('.row3 img').attr("src","images/bloodtest-2.png");
+               $('.row4 img').attr("src","images/bloodtest-2.png");
                document.getElementById("numberitem").innerHTML = value;
                document.getElementById("amountitem").innerHTML = value;
                return false
@@ -233,6 +232,9 @@
        }
        tableClick();
     }
+    testLetters();
+    alphabet();
+    bottomList();
     changeValue();
 
 
