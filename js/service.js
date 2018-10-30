@@ -224,10 +224,11 @@
        function tableClick() {
            $('.table td').click(function () {
                value ++;
+               $('.blood').attr("src","images/bloodtest-2.png");
                document.getElementById("numberitem").innerHTML = value;
                document.getElementById("amountitem").innerHTML = value;
                return false
-               $('.blood').attr("src","bloodtest-2.png");
+
            });
        }
        tableClick();
