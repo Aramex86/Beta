@@ -81,8 +81,6 @@
         }
         choiseAlphabet();
     }
-
-
     function bottomList() {
     var bottomtest = $('.testswrap span');
     for (var i = 0;i<=bottomtest.length;i++){
@@ -214,21 +212,34 @@
         });
     }
     }
+
     function changeValue() {
         var value = 0;
        function tableClick() {
            $('.table td').click(function () {
                value ++;
                $('.blood').attr("src","images/bloodtest-2.png");
-               $('.row1 img').attr("src","images/bloodtest-2.png");
-               $('.row2 img').attr("src","images/bloodtest-2.png");
-               $('.row3 img').attr("src","images/bloodtest-2.png");
-               $('.row4 img').attr("src","images/bloodtest-2.png");
                document.getElementById("numberitem").innerHTML = value;
                document.getElementById("amountitem").innerHTML = value;
                return false
-
            });
+           $('.row1 td').click(function () {
+             $('.row1 td:eq(2) img').attr("src","images/bloodtest-2.png");
+           });
+           $('.row2 td').click(function () {
+              $('.row2 td:eq(2) img').attr("src","images/bloodtest-2.png");
+           });
+           $('.row3 td').click(function () {
+              $('.row3 td:eq(2) img').attr("src","images/bloodtest-2.png");
+           });
+           $('.row4 td').click(function () {
+              $('.row4 td:eq(2) img').attr("src","images/bloodtest-2.png");
+           });
+            $(letters).click(function () {
+                $('.table img').attr("src","images/bloodtest-1.png");
+            });
+
+
        }
        tableClick();
     }
@@ -236,7 +247,6 @@
     alphabet();
     bottomList();
     changeValue();
-
 
 
 
