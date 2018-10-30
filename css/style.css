@@ -851,6 +851,8 @@
 }
 #numberitem{
     padding-bottom: 5px;
+    font-size: 21px;
+    font-weight: bold;
 }
 /*end select */
 .amount{
@@ -865,6 +867,8 @@
 }
 #amountitem{
     padding-bottom: 5px;
+    font-size: 21px;
+    font-weight: bold;
 }
 .amount-img{
     width: 30%;

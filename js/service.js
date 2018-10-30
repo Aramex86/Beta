@@ -219,9 +219,20 @@
     }
     }
     bottomList();
-    console.log(bottomList);
-
-
+    function changeValue() {
+        var value = 0;
+       function tableClick() {
+           $('.table td').click(function () {
+               value ++;
+               document.getElementById("numberitem").innerHTML = value;
+               document.getElementById("amountitem").innerHTML = value;
+               return false
+               $('.blood').attr("src","bloodtest-2.png");
+           });
+       }
+       tableClick();
+    }
+    changeValue();
 
 
 
