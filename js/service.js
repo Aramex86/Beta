@@ -23,7 +23,7 @@
           $(letters[4]).click(function () {
               $('.table').show();
               $('.row1 td:eq(0)').html(test[1]);
-              $('.row1 td:eq(1)').html('150.00');
+              $('.price').html('150.00');
               $('.row2').hide();
               $('.row3').hide();
               $('.row4').hide();
@@ -212,28 +212,38 @@
         });
     }
     }
-
     function changeValue() {
         var value = 0;
+        var row1= parseInt($('.price:eq(0)').text());
+        var row2= parseInt($('.price:eq(1)').text());
+        var row3= parseInt($('.price:eq(2)').text());
+        var row4= parseInt($('.price:eq(3)').text());
+        var amount =row1+row2+row3+row4;
+        console.log(amount);
        function tableClick() {
            $('.table td').click(function () {
                value ++;
                $('.blood').attr("src","images/bloodtest-2.png");
                document.getElementById("numberitem").innerHTML = value;
-               document.getElementById("amountitem").innerHTML = value;
+               //document.getElementById("amountitem").innerHTML = value;
                return false
            });
            $('.row1 td').click(function () {
              $('.row1 td:eq(2) img').attr("src","images/bloodtest-2.png");
+                $('#amountitem').html(row1);
+                return false
            });
            $('.row2 td').click(function () {
               $('.row2 td:eq(2) img').attr("src","images/bloodtest-2.png");
+               $('#amountitem').html(row2+row1);
            });
            $('.row3 td').click(function () {
               $('.row3 td:eq(2) img').attr("src","images/bloodtest-2.png");
+               $('#amountitem').html(row1 + row2 + row3 + row4);
            });
            $('.row4 td').click(function () {
               $('.row4 td:eq(2) img').attr("src","images/bloodtest-2.png");
+               $('#amountitem').html(row1 + row2 + row3 + row4);
            });
             $(letters).click(function () {
                 $('.table img').attr("src","images/bloodtest-1.png");
@@ -247,7 +257,6 @@
     alphabet();
     bottomList();
     changeValue();
-
 
 
 
