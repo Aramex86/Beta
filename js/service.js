@@ -1,6 +1,7 @@
     var test = $('.testslist span');
     var letters = $('.alphabet a');
     var value = 0;
+
     /*function testLetters() {
         for (var i = 0; i <= test.length;i++ ){
         }
@@ -276,6 +277,26 @@
        item18:{name:'Herpes Testing',price:'300.00'},
        item19:{name:'HIV Antibody Test',price:'350.00'},
    };
+   function amount() {
+       var price  = parseInt($('#price').text());
+       var price1 = parseInt($('#price1').text());
+       var price2 = parseInt($('#price2').text());
+       var price3 = parseInt($('#price3').text());
+
+     $('.table td').click(function () {
+
+         var price  = parseInt($('#price').text());
+         var price1 = parseInt($('#price1').text());
+         var price2 = parseInt($('#price2').text());
+         var price3 = parseInt($('#price3').text());
+         document.querySelector('#amountitem').textContent = price1;
+         console.log(price1);
+
+
+     });
+   }
+amount();
+
    function itemSwich(){
         $('.alphabet a:eq(14)').click(function () {
            $('.table').show();
@@ -379,8 +400,8 @@
    function bottom() {
        $('.testswrap').click(function () {
            $('.row2,.row3,.row4').hide();
-           $('.select-img img').attr("src","images/bloodtest-1.png");
-           $('.select-img img').attr("src","images/bloodtest-2.png");
+          // $('.select-img img').attr("src","images/bloodtest-1.png");
+          // $('.select-img img').attr("src","images/bloodtest-2.png");
        });
       $('.testswrap span:eq(0)').click(function () {
           $('.table').show();
@@ -495,15 +516,11 @@
            document.querySelector('#price').textContent = testsName.item19.price;
            document.querySelector('#numberitem').textContent = value;
        });
-
-
-
-
-
-
-
    }
    function selected() {
+
+
+
 
         $('#name').click(function () {
             value++
