@@ -277,29 +277,9 @@
        item18:{name:'Herpes Testing',price:'300.00'},
        item19:{name:'HIV Antibody Test',price:'350.00'},
    };
-   function amount() {
-       var price  = parseInt($('#price').text());
-       var price1 = parseInt($('#price1').text());
-       var price2 = parseInt($('#price2').text());
-       var price3 = parseInt($('#price3').text());
-
-     $('.table td').click(function () {
-
-         var price  = parseInt($('#price').text());
-         var price1 = parseInt($('#price1').text());
-         var price2 = parseInt($('#price2').text());
-         var price3 = parseInt($('#price3').text());
-         document.querySelector('#amountitem').textContent = price1;
-         console.log(price1);
-
-
-     });
-   }
-amount();
-
-   function itemSwich(){
+    function itemSwich(){
         $('.alphabet a:eq(14)').click(function () {
-           $('.table').show();
+            $('.table').show();
             document.querySelector('#name').textContent = testsName.item1.name;
             document.querySelector('#price').textContent = testsName.item1.price;
             document.querySelector('#name1').textContent = testsName.item2.name;
@@ -309,215 +289,215 @@ amount();
             $('.row4').hide();
         });
         $('.alphabet a:eq(2)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item8.name;
-           document.querySelector('#price').textContent = testsName.item8.price;
-           document.querySelector('#name1').textContent = testsName.item9.name;
-           document.querySelector('#price1').textContent = testsName.item9.price;
-           document.querySelector('#name2').textContent = testsName.item14.name;
-           document.querySelector('#price2').textContent = testsName.item14.price;
-           document.querySelector('#name3').textContent = testsName.item10.name;
-           document.querySelector('#price3').textContent = testsName.item10.price;
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item8.name;
+            document.querySelector('#price').textContent = testsName.item8.price;
+            document.querySelector('#name1').textContent = testsName.item9.name;
+            document.querySelector('#price1').textContent = testsName.item9.price;
+            document.querySelector('#name2').textContent = testsName.item14.name;
+            document.querySelector('#price2').textContent = testsName.item14.price;
+            document.querySelector('#name3').textContent = testsName.item10.name;
+            document.querySelector('#price3').textContent = testsName.item10.price;
             $('.row2').show();
             $('.row3').show();
             $('.row4').show();
         });
-       $('.alphabet a:eq(4)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item3.name;
-           document.querySelector('#price').textContent = testsName.item3.price;
-           $('.row2').hide();
-           $('.row3').hide();
-           $('.row4').hide();
-       });
-       $('.alphabet a:eq(7)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item4.name;
-           document.querySelector('#price').textContent = testsName.item4.price;
-           document.querySelector('#name1').textContent = testsName.item17.name;
-           document.querySelector('#price1').textContent = testsName.item17.price;
-           document.querySelector('#name2').textContent = testsName.item18.name;
-           document.querySelector('#price2').textContent = testsName.item18.price;
-           document.querySelector('#name3').textContent = testsName.item19.name;
-           document.querySelector('#price3').textContent = testsName.item19.price;
-           $('.row2').show();
-           $('.row3').show();
-           $('.row4').show();
-       });
-       $('.alphabet a:eq(6)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item5.name;
-           document.querySelector('#price').textContent = testsName.item5.price;
-           document.querySelector('#name1').textContent = testsName.item15.name;
-           document.querySelector('#price1').textContent = testsName.item15.price;
-           $('.row2').show();
-           $('.row3').hide();
-           $('.row4').hide();
-       });
-       $('.alphabet a:eq(8)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item6.name;
-           document.querySelector('#price').textContent = testsName.item6.price;
-           $('.row2').hide();
-           $('.row3').hide();
-           $('.row4').hide();
-       });
-       $('.alphabet a:eq(1)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item7.name;
-           document.querySelector('#price').textContent = testsName.item7.price;
-           $('.row2').hide();
-           $('.row3').hide();
-           $('.row4').hide();
-       });
-       $('.alphabet a:eq(5)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item11.name;
-           document.querySelector('#price').textContent = testsName.item11.price;
-           document.querySelector('#name1').textContent = testsName.item12.name;
-           document.querySelector('#price1').textContent = testsName.item12.price;
-           $('.row2').show();
-           $('.row3').hide();
-           $('.row4').hide();
-       });
-       $('.alphabet a:eq(9)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item13.name;
-           document.querySelector('#price').textContent = testsName.item13.price;
-           $('.row2').hide();
-           $('.row3').hide();
-           $('.row4').hide();
-       });
-       $('.alphabet a:eq(15)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item16.name;
-           document.querySelector('#price').textContent = testsName.item16.price;
-           $('.row2').hide();
-           $('.row3').hide();
-           $('.row4').hide();
-       });
-   }
-   function bottom() {
-       $('.testswrap').click(function () {
-           $('.row2,.row3,.row4').hide();
-          // $('.select-img img').attr("src","images/bloodtest-1.png");
-          // $('.select-img img').attr("src","images/bloodtest-2.png");
-       });
-      $('.testswrap span:eq(0)').click(function () {
-          $('.table').show();
-           document.querySelector('#name').textContent = testsName.item1.name;
-           document.querySelector('#price').textContent = testsName.item1.price;
-           document.querySelector('#numberitem').textContent = value;
-      });
-       $('.testswrap span:eq(1)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item3.name;
-           document.querySelector('#price').textContent = testsName.item3.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(2)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item2.name;
-           document.querySelector('#price').textContent = testsName.item2.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(3)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item4.name;
-           document.querySelector('#price').textContent = testsName.item4.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(4)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item5.name;
-           document.querySelector('#price').textContent = testsName.item5.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(5)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item6.name;
-           document.querySelector('#price').textContent = testsName.item6.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(6)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item7.name;
-           document.querySelector('#price').textContent = testsName.item7.price;
-       });
-       $('.testswrap span:eq(7)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item8.name;
-           document.querySelector('#price').textContent = testsName.item8.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(8)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item9.name;
-           document.querySelector('#price').textContent = testsName.item9.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(9)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item10.name;
-           document.querySelector('#price').textContent = testsName.item10.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(10)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item11.name;
-           document.querySelector('#price').textContent = testsName.item11.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(11)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item12.name;
-           document.querySelector('#price').textContent = testsName.item12.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(12)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item13.name;
-           document.querySelector('#price').textContent = testsName.item13.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(13)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item14.name;
-           document.querySelector('#price').textContent = testsName.item14.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(14)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item15.name;
-           document.querySelector('#price').textContent = testsName.item15.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(15)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item16.name;
-           document.querySelector('#price').textContent = testsName.item16.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(16)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item17.name;
-           document.querySelector('#price').textContent = testsName.item17.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(17)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item18.name;
-           document.querySelector('#price').textContent = testsName.item18.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-       $('.testswrap span:eq(18)').click(function () {
-           $('.table').show();
-           document.querySelector('#name').textContent = testsName.item19.name;
-           document.querySelector('#price').textContent = testsName.item19.price;
-           document.querySelector('#numberitem').textContent = value;
-       });
-   }
-   function selected() {
+        $('.alphabet a:eq(4)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item3.name;
+            document.querySelector('#price').textContent = testsName.item3.price;
+            $('.row2').hide();
+            $('.row3').hide();
+            $('.row4').hide();
+        });
+        $('.alphabet a:eq(7)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item4.name;
+            document.querySelector('#price').textContent = testsName.item4.price;
+            document.querySelector('#name1').textContent = testsName.item17.name;
+            document.querySelector('#price1').textContent = testsName.item17.price;
+            document.querySelector('#name2').textContent = testsName.item18.name;
+            document.querySelector('#price2').textContent = testsName.item18.price;
+            document.querySelector('#name3').textContent = testsName.item19.name;
+            document.querySelector('#price3').textContent = testsName.item19.price;
+            $('.row2').show();
+            $('.row3').show();
+            $('.row4').show();
+        });
+        $('.alphabet a:eq(6)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item5.name;
+            document.querySelector('#price').textContent = testsName.item5.price;
+            document.querySelector('#name1').textContent = testsName.item15.name;
+            document.querySelector('#price1').textContent = testsName.item15.price;
+            $('.row2').show();
+            $('.row3').hide();
+            $('.row4').hide();
+        });
+        $('.alphabet a:eq(8)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item6.name;
+            document.querySelector('#price').textContent = testsName.item6.price;
+            $('.row2').hide();
+            $('.row3').hide();
+            $('.row4').hide();
+        });
+        $('.alphabet a:eq(1)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item7.name;
+            document.querySelector('#price').textContent = testsName.item7.price;
+            $('.row2').hide();
+            $('.row3').hide();
+            $('.row4').hide();
+        });
+        $('.alphabet a:eq(5)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item11.name;
+            document.querySelector('#price').textContent = testsName.item11.price;
+            document.querySelector('#name1').textContent = testsName.item12.name;
+            document.querySelector('#price1').textContent = testsName.item12.price;
+            $('.row2').show();
+            $('.row3').hide();
+            $('.row4').hide();
+        });
+        $('.alphabet a:eq(9)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item13.name;
+            document.querySelector('#price').textContent = testsName.item13.price;
+            $('.row2').hide();
+            $('.row3').hide();
+            $('.row4').hide();
+        });
+        $('.alphabet a:eq(15)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item16.name;
+            document.querySelector('#price').textContent = testsName.item16.price;
+            $('.row2').hide();
+            $('.row3').hide();
+            $('.row4').hide();
+        });
+    }
+    function bottom() {
+        $('.testswrap').click(function () {
+            $('.row2,.row3,.row4').hide();
+            // $('.select-img img').attr("src","images/bloodtest-1.png");
+            // $('.select-img img').attr("src","images/bloodtest-2.png");
+        });
+        $('.testswrap span:eq(0)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item1.name;
+            document.querySelector('#price').textContent = testsName.item1.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(1)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item3.name;
+            document.querySelector('#price').textContent = testsName.item3.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(2)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item2.name;
+            document.querySelector('#price').textContent = testsName.item2.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(3)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item4.name;
+            document.querySelector('#price').textContent = testsName.item4.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(4)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item5.name;
+            document.querySelector('#price').textContent = testsName.item5.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(5)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item6.name;
+            document.querySelector('#price').textContent = testsName.item6.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(6)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item7.name;
+            document.querySelector('#price').textContent = testsName.item7.price;
+        });
+        $('.testswrap span:eq(7)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item8.name;
+            document.querySelector('#price').textContent = testsName.item8.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(8)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item9.name;
+            document.querySelector('#price').textContent = testsName.item9.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(9)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item10.name;
+            document.querySelector('#price').textContent = testsName.item10.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(10)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item11.name;
+            document.querySelector('#price').textContent = testsName.item11.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(11)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item12.name;
+            document.querySelector('#price').textContent = testsName.item12.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(12)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item13.name;
+            document.querySelector('#price').textContent = testsName.item13.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(13)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item14.name;
+            document.querySelector('#price').textContent = testsName.item14.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(14)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item15.name;
+            document.querySelector('#price').textContent = testsName.item15.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(15)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item16.name;
+            document.querySelector('#price').textContent = testsName.item16.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(16)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item17.name;
+            document.querySelector('#price').textContent = testsName.item17.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(17)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item18.name;
+            document.querySelector('#price').textContent = testsName.item18.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+        $('.testswrap span:eq(18)').click(function () {
+            $('.table').show();
+            document.querySelector('#name').textContent = testsName.item19.name;
+            document.querySelector('#price').textContent = testsName.item19.price;
+            document.querySelector('#numberitem').textContent = value;
+        });
+    }
+    function selected() {
 
 
 
@@ -547,6 +527,34 @@ amount();
     itemSwich();
     bottom();
     selected();
+
+
+
+   function amount() {
+     $('.table td').click(function () {
+         var price  = parseInt($('#price').text());
+         var price1 = parseInt($('#price1').text());
+         var price2 = parseInt($('#price2').text());
+         var price3 = parseInt($('#price3').text());
+        $('.row1').click(function () {
+             $('#amountitem').text(price);
+         });
+         $('.row2').click(function () {
+          $('#amountitem').text(Math.floor(price + price1));
+         });
+         $('.row3').click(function () {
+            $('#amountitem').text(Math.floor(price + price1 + price2));
+         });
+         $('.row4').click(function () {
+           $('#amountitem').text(Math.floor(price + price1 + price3 + price2));
+         });
+
+     });
+   }
+amount();
+
+
+
 
 
 
