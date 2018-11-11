@@ -148,4 +148,124 @@
         font-size: 98%;
         margin-bottom: 10px;
     }
+    .nav-top{
+        display: none;
+    }
+    .pic-link img{
+        width: 22%;
+    }
+    .personal-cab {
+        display: flex;
+        width: 25%;
+        justify-content: flex-end;
+    }
+    .burger-btn{
+        width: 35px;
+        height: 35px;
+        background-image: url(../images/burger-menu.png);
+        background-color: white;
+        border: none;
+        outline: none!important;
+        margin:25px 0;
+        display: block;
+    }
+    .personal-cab p {
+        left: 38%;
+        position: relative;
+        top: -28px;
+        font-variant: small-caps;
+        font-family: "open sans",sans-serif;
+        font-size: 1.3em;
+    }
+    .lang {
+        position: relative;
+        top: -29%;
+    }
+    .pic-link img {
+        width: 29%;
+    }
+    .personal-cab a {
+        text-decoration: none;
+        color: #556372;
+        font-family: "open sans", sans-serif;
+        font-size: 15px;
+    }
+    .logo{
+        width: 25%;
+    }
+    .registrationform {
+        padding: 22px 56px;
+        border-radius: 20px;
+        width: 50%;
+    }
+    .loginform {
+        padding: 40px 21px;
+        border-radius: 20px;
+        width: 48%;
+    }
+    .cardpic img {
+        border-radius: 7px;
+        width: 157px;
+    }
+    .userpic img {
+        border-radius: 7px;
+        width: 157px;
+    }
+    .moblile-menu {
+        width: 100%;
+        height: 45px;
+    }
+    .mobile-nav{
+        margin-top: 106px;
+    }
+    .mobile-nav ul{
+        padding:0 184px;
+    }
+    .mobile-nav li{
+        display: inline-block;
+        padding: 0 17px;
+        line-height: 50px;
+    }
+    .mobile-nav a{
+        color: #556372;
+        font-variant: all-small-caps;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "open sans", sans-serif;
+    }
+    .mobile-nav a:hover{
+        color: #b10d0d;
+    }
+    .services {
+        margin-top: 110px;
+        background-color: white;
+    }
+    .blog {
+        margin-top: 110px;
+        background-color: white;
+    }
+    .aboutus {
+        margin-top: 110px;
+        background-color: #ffff;
+    }
+    #map {
+        width: 100%;
+        height: 450px;
+        background-color: #929292;
+        margin-top: 110px;
+    }
+    .authorization-block nav {
+        padding: 20px 10px;
+        box-shadow: 1px 0px 5px 1px rgba(164, 164, 164, 0.2);
+        margin-top: 110px;
+    }
+    .moblile-menu{
+        display: none;
+        margin-bottom: -103px;
+    }
+    .show-hide{
+        display: block;
+    }
+
+
 }

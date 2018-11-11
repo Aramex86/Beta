@@ -48,6 +48,9 @@
     display: flex;
     align-items: center;
 }
+.burger-btn{
+    display: none;
+}
 
 .page-link{
     display: inline-block;

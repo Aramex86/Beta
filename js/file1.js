@@ -112,6 +112,9 @@ $(document).ready(function () {
         $('.tests a').click(function () {
             window.location.replace("./services.html");
         });
+        $('.burger-btn').click(function () {
+            $('.moblile-menu').toggleClass('show-hide');
+        });
 
 
 
