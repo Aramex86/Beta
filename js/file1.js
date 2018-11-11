@@ -1,7 +1,7 @@
 $(document).ready(function () {
         $('.blogslider').bxSlider({
-            moveSlides:1,
-            maxSlides:3,
+            moveSlides:4,
+            maxSlides:4,
             slideWidth: 470,
             pager:false,
             slideMargin:20,
