@@ -257,25 +257,25 @@
     changeValue();
     */
    var testsName = {
-       item1:{name:'Respiratory syncytial virus (RSV)',price:'150.00'},
-       item2:{name:'Rotavirus',price:'250.00'},
-       item3:{name:'Epstein-Barr virus',price:'100.00'},
+       item1:{name:'Respiratory syncytial virus (RSV)',price:150.00},
+       item2:{name:'Rotavirus',price:250.00},
+       item3:{name:'Epstein-Barr virus',price:100.00},
        item4:{name:'Hepatitis',price:'150.00'},
-       item5:{name:'Genital warts (human papillomavirus, or HPV)',price:'200.00'},
-       item6:{name:'Influenza (flu)',price:'100.00'},
-       item7:{name:'Blood glucose test',price:'110.00'},
-       item8:{name:'Cardiac enzymes',price:'300.00'},
-       item9:{name:'Calcium blood test',price:'130.00'},
-       item10:{name:'C-reactive protein (CRP) test',price:'150.00'},
-       item11:{name:'Folate test',price:'160.00'},
-       item12:{name:'Full blood count',price:'100.00'},
-       item13:{name:'Liver function tests',price:'140.00'},
-       item14:{name:'Chlamydia Testing',price:'220.00'},
-       item15:{name:'Gonorrhea Testing',price:'180.00'},
-       item16:{name:'Syphilis Tests',price:'120.00'},
-       item17:{name:'HPV Test',price:'500.00'},
-       item18:{name:'Herpes Testing',price:'300.00'},
-       item19:{name:'HIV Antibody Test',price:'350.00'},
+       item5:{name:'Genital warts (human papillomavirus, or HPV)',price:200.00},
+       item6:{name:'Influenza (flu)',price:100.00},
+       item7:{name:'Blood glucose test',price:110.00},
+       item8:{name:'Cardiac enzymes',price:300.00},
+       item9:{name:'Calcium blood test',price:130.00},
+       item10:{name:'C-reactive protein (CRP) test',price:150.00},
+       item11:{name:'Folate test',price:160.00},
+       item12:{name:'Full blood count',price:100.00},
+       item13:{name:'Liver function tests',price:140.00},
+       item14:{name:'Chlamydia Testing',price:220.00},
+       item15:{name:'Gonorrhea Testing',price:180.00},
+       item16:{name:'Syphilis Tests',price:120.00},
+       item17:{name:'HPV Test',price:500.00},
+       item18:{name:'Herpes Testing',price:300.00},
+       item19:{name:'HIV Antibody Test',price:350.00},
    };
     function itemSwich(){
         $('.alphabet a:eq(14)').click(function () {
@@ -527,29 +527,29 @@
     itemSwich();
     bottom();
     selected();
-
-
-
    function amount() {
-     $('.table td').click(function () {
-         var price  = parseInt($('#price').text());
-         var price1 = parseInt($('#price1').text());
-         var price2 = parseInt($('#price2').text());
-         var price3 = parseInt($('#price3').text());
         $('.row1').click(function () {
-             $('#amountitem').text(price);
-         });
-         $('.row2').click(function () {
-          $('#amountitem').text(Math.floor(price + price1));
-         });
-         $('.row3').click(function () {
-            $('#amountitem').text(Math.floor(price + price1 + price2));
-         });
-         $('.row4').click(function () {
-           $('#amountitem').text(Math.floor(price + price1 + price3 + price2));
-         });
+         var sum = $('#price').html();
+         console.log(sum + this);
+         $('#amountitem').html(sum);
+        });
+        $('.row2').click(function () {
+         var sum = $('#price1').text();
 
-     });
+
+         console.log(sum);
+         $('#amountitem').text(sum);
+        });
+        $('.row3').click(function () {
+         var sum = $('#price2').text();
+         console.log(sum);
+         $('#amountitem').text(sum);
+        });
+        $('.row4').click(function () {
+         var sum = $('#price3').text();
+         console.log(sum);
+         $('#amountitem').text(sum);
+        });
    }
 amount();
 
