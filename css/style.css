@@ -51,6 +51,9 @@
 .burger-btn{
     display: none;
 }
+.moblile-menu{
+    display: none;
+}
 
 .page-link{
     display: inline-block;
