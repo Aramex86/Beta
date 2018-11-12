@@ -384,7 +384,7 @@
     .show-hide {
         display: block;
         width: 186px;
-        height: 385px;
+        height: 100vh;
         margin-right: 0px;
         position: fixed;
         right: 0;
@@ -599,6 +599,48 @@
         border-radius: 5px;
         cursor: pointer;
     }
+    .btn{
+        margin-top: 74px;
+    }
+    .aboutus h2 {
+        text-align: center;
+        font-family: "open sans", sans-serif;
+        padding: 35px 0;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .aboutus p:nth-child(4) {
+        font-family: "open sans", sans-serif;
+        width: 88%;
+        margin: 0 auto;
+        line-height: 25px;
+        padding-bottom: 20px;
+        font-size: 1.3em;
+    }
+    .aboutuslist {
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 100px;
+        font-family: "open sans", sans-serif;
+        margin-top: 0px;
+    }
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    tbody{
+        font-size: 18px;
+    }
+    tbody img{
+        width: 52%;
+        margin-left: 20px;
+    }
+    .price{
+        font-weight: bold;
+    }
 
 
 
@@ -642,5 +684,131 @@
 
 
 
+
+}
+@media screen and (max-width: 360px){
+    .blogsliderwrap {
+        padding: 0px 19px;
+    }
+    .homeblock h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0;
+        font-family: "open sans", sans-serif;
+        color: #b10d0d;
+        font-size: 1.4em;
+        font-weight: 100;
+    }
+    .bx-viewport {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 475.313px!important;
+    }
+    .videoslider video {
+        width: 339px;
+        border-radius: 20px;
+    }
+    .secondslider{
+        height: 230.313px!important;
+    }
+    .footernav {
+        padding-left: 105px;
+    }
+    .footernav li {
+        display: inline-block;
+        font-family: "open sans",sans-serif;
+        padding: 0 0px;
+        font-variant: small-caps;
+        font-size: 1.2em;
+    }
+    .search img {
+        float: right;
+        padding: 0 20.5%;
+        display: none;
+    }
+    .serviceheader-text {
+        width: 100%;
+        margin-left: -39px;
+    }
+    .select {
+        width: 48.33%;
+        text-align: center;
+        display: flex;
+        border-right: 1px solid rgba(156, 156, 156, 0.51);
+        cursor: pointer;
+    }
+    .amount {
+        width: 48.33%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .tests ul {
+        text-align: center;
+        width: 79%;
+        margin: 0 auto;
+    }
+    .adress ul {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 25px 21px;
+    }
+    .adress{
+        font-size: 14px;
+    }
+    .userpic img {
+        border-radius: 7px;
+        width: 126px;
+        margin-bottom: 10px;
+    }
+    .cardpic img {
+        border-radius: 7px;
+        width: 126px;
+    }
+    .recoverpass p {
+        float: right;
+        color: #b10d0d;
+        text-decoration: underline;
+        padding:0;
+    }
+    .recoverpass {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .remeber {
+        width: 100%;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .loginform span:after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid #b10d0d;
+        width: 142px;
+        margin-bottom: 50px;
+    }
+    .registrationform li {
+        padding: 10px 0;
+        list-style: disc;
+        font-family: "open sans", sans-serif;
+        font-size: 14px;
+    }
+    .btnreg {
+        width: 100%;
+        text-align: center;
+        margin-top: 168px;
+    }
+    .exemple2 input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 42px;
+        border-radius: 5px;
+        border: 1px solid rgba(128, 128, 128, 0.71);
+    }
 
 }

@@ -117,12 +117,15 @@ $(document).ready(function () {
         }
         blogSwitch();
 
-
         $('.tests a').click(function () {
             window.location.replace("./services.html");
         });
         $('.burger-btn').click(function () {
             $('.moblile-menu').toggleClass('show-hide');
+        });
+        $('.burger-btn').click(function () {
+           $('.show-hide').fadeIn(2500);
+
         });
 
 
