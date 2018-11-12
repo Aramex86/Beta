@@ -5,6 +5,7 @@ $(document).ready(function () {
             slideWidth: 470,
             pager:false,
             slideMargin:20,
+            auto:true,
         });
         $('.videoslider').bxSlider({
             moveSlides:1,
@@ -12,6 +13,7 @@ $(document).ready(function () {
             slideWidth: 470,
             pager:false,
             slideMargin:28,
+            auto:true,
         });
         $('.videosliderwrap div:eq(1)').addClass('secondslider');
         $(".fadepage").delay(300).animate({"opacity": "1.5"}, 600);
@@ -49,56 +51,60 @@ $(document).ready(function () {
         });
         }
         registration();
-       $('.blogfull').addClass('hide');
+      $('.blogfull').addClass('hide');
 
         var blogTop = {
-            name1:$('.articleblog').eq(0),
-            name2:$('.articleblog').eq(1),
+            name:$('.articleblog').eq(0),
+            name1:$('.articleblog').eq(1),
+            name2:$('.articleblog').eq(2),
             name3:$('.articleblog').eq(3),
             name4:$('.articleblog').eq(4),
-            name5:$('.articleblog').eq(5),
         }
         var blogBottom = {
-            name1:$('.blogfull').eq(0),
-            name2:$('.blogfull').eq(1),
+            name:$('.blogfull').eq(0),
+            name1:$('.blogfull').eq(1),
+            name2:$('.blogfull').eq(2),
             name3:$('.blogfull').eq(3),
             name4:$('.blogfull').eq(4),
-            name5:$('.blogfull').eq(5),
         }
-
+        console.log(blogTop.name4);
+        console.log(blogBottom.name4);
         function blogSwitch() {
-            $(blogTop.name4).hide();
-            $(blogTop.name1).click(function () {
-               $('.articleblog').hide();
-               $('.blogfull').hide();
-               $(blogBottom.name1).fadeIn(500);
+            $(blogTop.name).click(function () {
+                $('.articleblog').hide();
+                $('.blogfull').hide();
                 $('.load-button').hide();
+                $(blogBottom.name).fadeIn(500);
+            });
+            $(blogTop.name1).click(function () {
+                $('.articleblog').hide();
+                $('.blogfull').hide();
+                $('.load-button').hide();
+                $(blogBottom.name1).fadeIn(500);
             });
             $(blogTop.name2).click(function () {
                 $('.articleblog').hide();
                 $('.blogfull').hide();
+                $('.load-button').hide();
                 $(blogBottom.name2).fadeIn(500);
-                $('.load-button').hide();
-            });$(blogTop.name3).click(function () {
-                $('.articleblog').hide();
-                $('.blogfull').hide();
-                $(blogBottom.name3).fadeIn(500);
-                $('.load-button').hide();
-            });$(blogTop.name4).click(function () {
-                $('.articleblog').hide();
-                $('.blogfull').hide();
-                $(blogBottom.name4).fadeIn(500);
-                $('.load-button').hide();
             });
+            $(blogTop.name3).click(function () {
+                $('.articleblog').hide();
+                $('.blogfull').hide();
+                $('.load-button').hide();
+                $(blogBottom.name3).fadeIn(500);
+            });
+            $(blogTop.name4).click(function () {
+                $('.articleblog').hide();
+                $('.blogfull').hide();
+                $('.load-button').hide();
+                $(blogBottom.name4).fadeIn(500);
+            });
+            $(blogTop.name4).hide();
+
             $('.load-more').click(function () {
                $(blogTop.name4).fadeIn(500);
                $('.load-button').hide();
-            });
-            $(blogTop.name5).click(function () {
-                $('.articleblog').hide();
-                $('.blogfull').hide();
-                $(blogBottom.name5).fadeIn(500);
-                $('.load-button').hide();
             });
             $('.article').click(function () {
                 window.location.replace("./blog.html");
@@ -107,14 +113,18 @@ $(document).ready(function () {
             $('.articleblog').click(function () {
             $('.back').show();
             });
+
         }
         blogSwitch();
+
+
         $('.tests a').click(function () {
             window.location.replace("./services.html");
         });
         $('.burger-btn').click(function () {
             $('.moblile-menu').toggleClass('show-hide');
         });
+
 
 
 
